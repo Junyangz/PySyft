@@ -35,12 +35,13 @@ sys.path.insert(0, os.path.abspath("../.."))
 # ones.
 extensions = [
     "sphinx.ext.autodoc",
-    "sphinx.ext.todo",
-    "sphinx.ext.coverage",
-    "sphinx.ext.mathjax",
-    "sphinx.ext.viewcode",
-    "sphinx.ext.githubpages",
     "sphinx.ext.autosummary",
+    "sphinx.ext.coverage",
+    "sphinx.ext.githubpages",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.todo",
+    "sphinx.ext.viewcode",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -140,9 +141,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, "PySyft.tex", "PySyft Documentation", "Andrew Trask", "manual")
-]
+latex_documents = [(master_doc, "PySyft.tex", "PySyft Documentation", "Andrew Trask", "manual")]
 
 
 # -- Options for manual page output ---------------------------------------
